@@ -1,0 +1,28 @@
+{
+  "name": "domain-switcher",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Chrome extension to quickly switch between production and local development domains",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "package": "npm run build && cd dist && zip -r ../domain-switcher.zip . && cd .. && echo '✅ Package created: domain-switcher.zip'"
+  },
+  "keywords": [
+    "chrome-extension",
+    "developer-tools",
+    "domain-switcher"
+  ],
+  "author": "Martin Ragan <dev.martin.ragan@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.2.1",
+    "@types/chrome": "^0.1.27",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.1"
+  }
+}
